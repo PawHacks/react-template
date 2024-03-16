@@ -6,7 +6,7 @@ function App() {
   const [text, setText] = useState('api call not here yet')
 
   const getApiCall = async () => {
-    const data = await fetch('http://numbersapi.com/random/math');
+    const data = await fetch('some api link'); // replace this with your real link
     const response = await data.text();
     setText(response);
   }
